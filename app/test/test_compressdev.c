@@ -450,6 +450,9 @@ compress_zlib(struct rte_comp_op *op,
 	else if (xform->compress.chksum == RTE_COMP_CHECKSUM_CRC32)
 		window_bits = ZLIB_CRC_CHECKSUM_WINDOW_BITS;
 
+	// hack for zlib
+	window_bits = 15;
+
 	comp_level = xform->compress.level;
 
 	if (comp_level != RTE_COMP_LEVEL_NONE)
@@ -593,6 +596,9 @@ decompress_zlib(struct rte_comp_op *op,
 	 * When doing raw DEFLATE, this number will be negative.
 	 */
 	window_bits = -(xform->decompress.window_size);
+
+	// hack for zlib
+	window_bits = 15;
 	ret = inflateInit2(&stream, window_bits);
 
 	if (ret != Z_OK) {
