@@ -55,6 +55,10 @@ New Features
      Also, make sure to start the actual text at the margin.
      =======================================================
 
+* **Updated Intel QuickAssist Technology (QAT) crypto driver.**
+
+  Added support for combined Cipher-CRC offload for DOCSIS for QAT GENs 2,3 and 4.
+
 
 Removed Items
 -------------
