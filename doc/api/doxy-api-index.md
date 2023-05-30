@@ -128,7 +128,8 @@ The public API headers are grouped by topics:
   [eCPRI](@ref rte_ecpri.h),
   [L2TPv2](@ref rte_l2tpv2.h),
   [PPP](@ref rte_ppp.h),
-  [PDCP hdr](@ref rte_pdcp_hdr.h)
+  [PDCP hdr](@ref rte_pdcp_hdr.h),
+  [PDCP](@ref rte_pdcp.h)
 
 - **QoS**:
   [metering](@ref rte_meter.h),

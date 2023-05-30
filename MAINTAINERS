@@ -1551,6 +1551,12 @@ F: doc/guides/tools/pdump.rst
 F: app/dumpcap/
 F: doc/guides/tools/dumpcap.rst
 
+PDCP - EXPERIMENTAL
+M: Anoob Joseph <anoobj@marvell.com>
+M: Volodymyr Fialko <vfialko@marvell.com>
+T: git://dpdk.org/next/dpdk-next-crypto
+F: lib/pdcp/
+
 
 Packet Framework
 ----------------
