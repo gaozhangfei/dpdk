@@ -70,6 +70,18 @@ New Features
   * Added support for SM3 hash operations.
   * Added support for AES-CCM in cn9k and cn10k drivers.
 
+* **Added PDCP Library.**
+
+  Added an experimental library ``lib_pdcp`` to provide PDCP UL and DL
+  processing of packets.
+
+  The library supports all PDCP algorithms and leverages lookaside crypto
+  offloads to cryptodevs for crypto processing. PDCP features such as IV
+  generation, sequence number handling etc are supported. It is planned to add
+  more features such as packet caching in future releases.
+
+  See :doc:`../prog_guide/pdcp_lib` for more information.
+
 
 Removed Items
 -------------

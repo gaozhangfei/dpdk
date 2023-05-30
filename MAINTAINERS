@@ -1557,6 +1557,7 @@ M: Volodymyr Fialko <vfialko@marvell.com>
 T: git://dpdk.org/next/dpdk-next-crypto
 F: lib/pdcp/
 F: app/test/test_pdcp*
+F: doc/guides/prog_guide/pdcp_lib.rst
 
 
 Packet Framework
